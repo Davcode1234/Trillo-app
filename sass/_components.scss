@@ -365,9 +365,6 @@
     margin-right: auto;
   }
 
-  &__friends {
-  }
-
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -442,5 +439,78 @@
     color: var(--color-Grey-light-2);
     font-family: sans-serif;
     z-index: 1;
+  }
+}
+
+/////////////////
+//CALL TO ACTION
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+  background-color: #fff;
+
+  &__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+  }
+}
+
+/////////////////
+//CALL TO Action
+
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary)
+  );
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%;
+  }
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary)
+    );
+  }
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }

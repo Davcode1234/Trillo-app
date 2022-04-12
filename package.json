@@ -1,7 +1,7 @@
 {
-  "name": "Trillo",
+  "name": "trillo-app",
   "version": "1.0.0",
-  "description": "Trillo app",
+  "description": "This is a trillo app which imitates a trip booking app. \r This project is a part of Jonas Schmedtmann course \"Advanced CSS and Sass: Flexbox, Grid, Animations and More!\" and it contains a lot of flexbox exercises.",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -12,7 +12,11 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
-  "author": "Jonas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davcode1234/Trillo-app.git"
+  },
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
@@ -20,5 +24,9 @@
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Davcode1234/Trillo-app/issues"
+  },
+  "homepage": "https://github.com/Davcode1234/Trillo-app#readme"
 }
